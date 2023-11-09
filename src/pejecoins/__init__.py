@@ -1,12 +1,10 @@
+#Suma sencilla
 def suma(x,y):
     resultado = x + y
     return resultado
 
-#Matriz
-
-
-
-def multmat(a,b):
+#Multiplicacion de matrices
+def multMat(a,b):
     resultados = []
 
     c = 0
@@ -25,10 +23,24 @@ def multmat(a,b):
                 c += posicionA * posicionB
             fila_resultante.append(c)  # Agregar el resultado a la fila resultante actual
         resultados.append(fila_resultante)  # Agregar la fila resultante a resultados
-
-
-
     for row in resultados:
         for element in row:
             print(f"({element}", end=")" )
         print()
+
+#Multiplicacion de matris por vector
+
+def multVector (a, b):
+    c = 0
+    iterar = a[0]
+    for i in a:
+        j = 0
+        
+        for i in iterar:
+            lista = a[c][j]
+            lista = lista * b
+            print(f"({lista}", end=")")
+            j = j + 1
+        print()    
+        c = c + 1
+  
