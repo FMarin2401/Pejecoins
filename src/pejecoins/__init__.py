@@ -32,14 +32,14 @@ def multMat(a,b):
 
 #Multiplicacion de matris por vector
 
-def multVector (a, b):
+def multVector (a,b):
     c = 0
-    iterar = a[0] #Declaro en una varaiable la cantidad de columbas que tiens
+    iterar = len(a[0]) #Declaro en una varaiable la cantidad de columbas que tiens
     resultados = []
     for i in a: #Itero por las filas
         j = 0
         
-        for i in iterar:#Itero por las columnas
+        for columna in iterar:#Itero por las columnas
             lista = a[c][j]
             lista = lista * b
             print(f"({lista}", end=")")
