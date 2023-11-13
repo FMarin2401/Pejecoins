@@ -5,7 +5,7 @@ Que prueba va a realizar:
 -----
 1) Suma => suma
 2) Multiplicacion de matrices => MxM
-3) Multiplicacion de matriz por vector => MxV
+3) Multiplicacion de matriz por vector => MxE
 4) Producto Cruz    =>  ProCruz
 -----
       
@@ -24,13 +24,13 @@ while True: #Bucle para realizar varias prubas con control
         a = [[-1, 0, 1], [7, 3, -(13/2)], [3, (1/2), -(5/2)]]
         b = [[2, 4, 5], [2, 3, 4], [3, 4, 6]]
 
-        multiplicacion = test.multMat(a, b)
+        multiplicacion = test.mxm(a, b)
         print(multiplicacion)
 
-    elif usuario == "MxV": #Matriz por vector
+    elif usuario == "MxE": #Matriz por escalar
         a = [[-1, 0, 3, 4], [7, 3, 5, 6], [3, 2, 4, 3]]
         b = 2
-        resultado = test.multVector(a,b)
+        resultado = test.mxesc(a,b)
         print(resultado)
 
     elif usuario == "ProCruz": #Matriz por vector

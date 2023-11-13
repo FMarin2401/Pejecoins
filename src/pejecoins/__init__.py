@@ -4,7 +4,7 @@ def suma(x,y):
     return resultado
 
 #Multiplicacion de matrices
-def multMat(a,b):
+def mxm(a,b):
     resultados = []
 
     c = 0
@@ -30,9 +30,9 @@ def multMat(a,b):
     return resultados
     
 
-#Multiplicacion de matris por vector
+#Multiplicacion de matris por escalar
 
-def multVector (a,b):
+def mxesc (a,b):
     c = 0
     iterar = len(a[0]) #Declaro en una varaiable la cantidad de columbas que tiens
     resultados = []
