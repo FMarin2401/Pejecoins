@@ -60,3 +60,23 @@ def ProCruz (a, b):
     P_3 = (a[0] * b[1]) - (a[1] * b[0])
     resultado.append(P_3)
     return resultado
+
+#Determinate de matriz 3x3
+def Det3x3(lista):
+    resultado = 0
+
+    for i in range(3):
+        a1 = lista[0][i]
+        a2 = lista[1][(i + 1) % 3]
+        a3 = lista[2][(i + 2) % 3]
+
+        resultado += (a1 * a2 * a3)
+
+    for i in range(3):
+        a1 = lista[0][i]
+        a2 = lista[1][(i - 1) % 3]
+        a3 = lista[2][(i - 2) % 3]
+
+        resultado -= (a1 * a2 * a3)
+
+    return resultado
