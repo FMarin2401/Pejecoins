@@ -7,7 +7,8 @@ Que prueba va a realizar:
 2) Multiplicacion de matrices => MxM
 3) Multiplicacion de matriz por vector => MxE
 4) Producto Cruz    =>  ProCruz
-5) Determinate 3x3  =>  Det3x3
+5) Determinante 3x3  =>  Det3x3
+6) Determinante 2x2  =>  Det2x2
 -----
       
 """)
@@ -44,6 +45,11 @@ while True: #Bucle para realizar varias prubas con control
     elif usuario == "Det3x3":
         a = [[1, -2, 1], [4, 2, 1], [3, -1, 2]]
         resultado = test.Det3x3(a)
+        print(resultado)
+
+    elif usuario == "Det2x2":
+        a = [[3, 3], [3, 5]]
+        resultado = test.Det2x2(a)
         print(resultado)
         
     else:

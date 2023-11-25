@@ -80,3 +80,11 @@ def Det3x3(lista):
         resultado -= (a1 * a2 * a3)
 
     return resultado
+
+def Det2x2(lista):
+    primerResultado = lista[0][0] * lista[1][1]
+    segundoResultado = lista[0][1] * lista[1][0]
+
+    determinante = primerResultado - segundoResultado
+
+    return determinante
