@@ -88,3 +88,17 @@ def Det2x2(lista):
     determinante = primerResultado - segundoResultado
 
     return determinante
+
+def MatrizTranspuesta(matriz):
+    filas = len(matriz)
+    columnas = len(matriz[0])
+    
+    transpuesta = []
+    for i in range(columnas):
+        filaTranspuesta = [0] * filas
+        transpuesta.append(filaTranspuesta)  
+    
+    for i in range(filas):
+        for j in range(columnas):
+            transpuesta[j][i] = matriz[i][j]
+    return transpuesta

@@ -13,7 +13,6 @@ Que prueba va a realizar:
       
 """)
 
-
 while True: #Bucle para realizar varias prubas con control
     
     usuario = str(input("Prueba: "))
