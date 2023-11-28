@@ -102,3 +102,13 @@ def MatrizTranspuesta(matriz):
         for j in range(columnas):
             transpuesta[j][i] = matriz[i][j]
     return transpuesta
+
+def SumaVectores(v1, v2):
+    if len(v1) != len(v2):
+        raise ValueError("Los vectores deben tener la misma longitud para ser sumados.")
+    
+    suma = []
+    for i in range(len(v1)):
+        suma.append(v1[i] + v2[i])
+    
+    return suma
