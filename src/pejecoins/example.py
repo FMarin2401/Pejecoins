@@ -9,7 +9,7 @@ Que prueba va a realizar:
 4) Producto Cruz    =>  ProCruz
 5) Determinante 3x3  =>  Det3x3
 6) Determinante 2x2  =>  Det2x2
-7) Matriz Transpuesta   => MatrizTranspuesta
+7) Matriz Transpuesta   => Transpuesta
 8) Suma de Vectores    => SumaVectores
 -----
       
@@ -52,6 +52,17 @@ while True: #Bucle para realizar varias prubas con control
         a = [[3, 3], [3, 5]]
         resultado = test.Det2x2(a)
         print(resultado)
-        
+    
+    elif usuario == "Transpuesta":
+        a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+        resultado = test.Transpuesta(a)
+        print(resultado)
+    
+    elif usuario == "SumaVectores":
+        a = [1, 2, 3]
+        b = [4, 5, 6]
+        resultado = test.SumaVectores(a)
+        print(resultado)
+    
     else:
         print("Comando Equivocado. Intenta de nuevo.")
