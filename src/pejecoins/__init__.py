@@ -89,7 +89,7 @@ def Det2x2(lista):
 
     return determinante
 
-def MatrizTranspuesta(matriz):
+def Transpuesta(matriz):
     filas = len(matriz)
     columnas = len(matriz[0])
     

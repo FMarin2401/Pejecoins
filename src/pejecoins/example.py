@@ -9,6 +9,8 @@ Que prueba va a realizar:
 4) Producto Cruz    =>  ProCruz
 5) Determinante 3x3  =>  Det3x3
 6) Determinante 2x2  =>  Det2x2
+7) Matriz Transpuesta   => MatrizTranspuesta
+8) Suma de Vectores    => SumaVectores
 -----
       
 """)
