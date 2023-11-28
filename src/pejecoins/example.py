@@ -61,7 +61,7 @@ while True: #Bucle para realizar varias prubas con control
     elif usuario == "SumaVectores":
         a = [1, 2, 3]
         b = [4, 5, 6]
-        resultado = test.SumaVectores(a)
+        resultado = test.SumaVectores(a,b)
         print(resultado)
     
     else:
