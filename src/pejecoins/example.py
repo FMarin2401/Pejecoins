@@ -11,8 +11,7 @@ Que prueba va a realizar:
 6) Determinante 2x2  =>  Det2x2
 7) Matriz Transpuesta   => Transpuesta
 8) Suma de Vectores    => SumaVectores
------
-      
+----   
 """)
 
 while True: #Bucle para realizar varias prubas con control
