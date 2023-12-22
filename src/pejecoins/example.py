@@ -23,8 +23,8 @@ while True: #Bucle para realizar varias prubas con control
         print(resultado)
          
     elif usuario == "MxM": #Multiplicacion de matrices
-        a = [[-1, 0, 1], [7, 3, -(13/2)], [3, (1/2), -(5/2)]]
-        b = [[2, 4, 5], [2, 3, 4], [3, 4, 6]]
+        a = [[1, -1, 0], [0, -1, 1], [0, 1, 0]]
+        b = [[1], [2], [3]]
 
         multiplicacion = test.mxm(a, b)
         print(multiplicacion)
